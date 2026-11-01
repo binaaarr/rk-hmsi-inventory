@@ -1,5 +1,7 @@
 {
-  "buildCommand": "npm run build",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install",
+  "buildCommand": "chmod -R +x node_modules/.bin && vite build",
   "outputDirectory": "dist",
   "rewrites": [
     {
